@@ -574,7 +574,7 @@ module.exports = function (webpackEnv) {
         remotes: {
           'remote': 'remote@http://127.0.0.1:5002/remoteRemoteEntry.js',
         },
-        shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+        // shared: { react: { singleton: true }, 'react-dom': { singleton: true },antd:{singleton: true} },
       }),
       new ModuleFederationPlugin({
         name: 'app1',

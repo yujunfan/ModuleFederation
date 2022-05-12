@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/lib/locale/zh_CN';
+import 'moment/locale/zh-cn';
+import 'antd/dist/antd.css';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-//   <React.StrictMode>
+  //   <React.StrictMode>
+  <ConfigProvider locale={zhCN}>
     <App />
-//   </React.StrictMode>
+  </ConfigProvider>
+  //   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

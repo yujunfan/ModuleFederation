@@ -575,7 +575,7 @@ module.exports = function (webpackEnv) {
         exposes: {
           './Hello': './src/Hello',
         },
-        shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+        shared: { react: { singleton: true }, 'react-dom': { singleton: true },antd:{singleton: true} },
       }),
       new HtmlWebpackPlugin(
         Object.assign(
